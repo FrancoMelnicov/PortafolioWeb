@@ -1,0 +1,57 @@
+.messageWeb{
+    height: 100vh;
+}
+
+.messageWeb{
+    border-bottom: 1px solid rgb(187, 186, 186);
+}
+
+h1{
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    border-right: 2px solid blue;
+    animation: blink 0.8s linear infinite alternate, typing 3s steps(27);
+}
+
+@keyframes blink {
+    50%{
+        border-right-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    transition: 0.5s;
+    background-color: rgb(0, 140, 255);
+}
+
+.option:hover{
+    background-color: rgb(0, 183, 255);
+}
+
+.option i{
+    width: 100%;
+    font-size: 35px;
+    text-align: center;
+}

@@ -1,0 +1,25 @@
+.navbar .container-fluid{
+    font-size: 25px;
+    background-color: white;
+}
+
+a, i{
+    text-decoration: none;
+    color: black;
+    transition: 0.1s;
+}
+
+a:hover, i:hover{
+    color: blue;
+}
+
+.nav-item{
+    border-bottom: 1px solid rgb(219, 219, 219);
+    transition: 0.1s;
+    margin-bottom: 20px;
+}
+
+.nav-item:hover{
+    border-bottom: 1px solid blue;
+    font-size: 18px;
+}
