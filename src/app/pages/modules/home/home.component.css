@@ -2,15 +2,11 @@
     height: 100vh;
 }
 
-.messageWeb{
-    border-bottom: 1px solid rgb(187, 186, 186);
-}
-
-h1{
+.messageWeb h2{
     overflow: hidden;
     white-space: nowrap;
     position: relative;
-    border-right: 2px solid blue;
+    border-right: 2px solid #c0d0ef;
     animation: blink 0.8s linear infinite alternate, typing 3s steps(27);
 }
 
@@ -29,29 +25,15 @@ h1{
     }
 }
 
-a{
-    text-decoration: none;
-    color: white;
+.cv button{
+    box-shadow: 0px 0px 10px 5px #668dc0
 }
 
-.option{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 175px;
-    height: 175px;
-    border-radius: 50%;
-    transition: 0.5s;
-    background-color: rgb(0, 140, 255);
+.aboutMe h2, .aboutMe h4{
+    color: #0f1c30;
+    border-bottom: 2px solid #0f1c30;
 }
 
-.option:hover{
-    background-color: rgb(0, 183, 255);
-}
-
-.option i{
-    width: 100%;
-    font-size: 35px;
-    text-align: center;
+.technology{
+    width: 125px;
 }

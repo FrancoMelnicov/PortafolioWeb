@@ -1,35 +1,39 @@
 <div class="messageWeb d-flex align-items-center justify-content-center">
     <div>
-        <div class="d-flex justify-content-center">
-            <h1>Let's make a better world!</h1>
+        <div class="text-center">
+            <h2>Let's make a better world!</h2>
         </div>
-        <div class="d-flex justify-content-center">
-            <h4>Welcome to my website!</h4>
+        <div class="text-center">
+            <h5>Welcome to my website!</h5>
+        </div>
+        <div class="cv text-center mt-5">
+            <button class="btn light-blue">Descargar CV <i class="bi bi-file-earmark-person"></i></button>
         </div>
     </div>
 </div>
-<div class="optionBox mt-5 mb-5 pt-5 pb-5">
-    <h2 class="text-center">Check these sections</h2>
-    <div class="listOptions d-flex justify-content-around flex-wrap mt-5 mb-5">
-        <a class="m-3" href="">
-            <div class="option p-5">
-                <i class="fa-solid fa-folder-open"></i>
-                <p class="fw-bold mt-3">Proyects</p>
-            </div>
-        </a>
-        <a class="m-3" href="">
-            <div class="option p-5">
-                <div>
-                    <i class="fa-solid fa-user"></i>
+<div class="aboutMe light-blue p-3">
+    <div class="container">
+        <div class="info">
+            <div class="mt-5">
+                <h2 class="pb-2">Acerca de mi</h2>
+                <div class="mt-4">
+                    <p>Soy un programador web con el objetivo de trabajar con las mejores tecnologías y poder brindar mis servicios tanto a mi equipo conmo mis clientes. Actualmente llevo mas de 1 año trabajando para empresas de alto nivel las cuales confiaron en mi y me permitieron mejorar mis habilidades técnicas y blandas.</p>
+                    <p>Me destaco por se una persona que no se niega a los desafíos que se le presentan y puede adaptarse a las distintas situaciones. Además me interesa el constante aprendizaje tanto de conceptos como tecnologías que me permitan llevar a cabo los distintos proyectos.</p>
                 </div>
-                <p class="fw-bold mt-3">About me</p>
             </div>
-        </a>
-        <a class="m-3" href="">
-            <div class="option p-5">
-                <i class="fa-solid fa-envelope"></i>
-                <p class="fw-bold mt-3">Contact</p>
+            <div class="mt-5">
+                <h4>Pincipales tecnologías y herramientas utilizadas: </h4>
+                <div class="d-flex flex-wrap justify-content-around mt-5 mb-5">
+                    <div *ngFor="let technology of listTechnology" class="technology m-3">
+                        <div class="logo text-center">
+                            <img [src]="technology.src" width="100" alt="angular">
+                        </div>
+                        <div class="name text-center">
+                            {{technology.name}}
+                        </div>
+                    </div>
+                </div>
             </div>
-        </a>
+        </div>
     </div>
 </div>
